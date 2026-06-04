@@ -1,0 +1,160 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Home",
+      "icon": "menu-icon icon-base ti tabler-smart-home",
+      "slug": "pages-home"
+    },
+    {
+      "url": "chart-of-accounts",
+      "name": "Chart OF Accounts",
+      "icon": "menu-icon icon-base ti tabler-smart-home",
+      "slug": "chart-of-accounts",
+      "submenu": [
+        {
+          "url": "/chart-of-accounts/create",
+          "name": "Add",
+          "slug": "chart-of-accounts.create"
+        },
+        {
+          "url": "/chart-of-accounts",
+          "name": "List",
+          "slug": "chart-of-accounts.index"
+        },
+        {
+          "url": "/aacount",
+          "name": "Account",
+          "slug": "chart-of-accounts.account",
+          "submenu": [
+            {
+              "url": "/chart-of-accounts/account/contact",
+              "name": "Contacts",
+              "slug": "chart-of-accounts.account.index"
+            },
+            {
+              "url": "/chart-of-accounts/account/otherAccount",
+              "name": "Other Accounts",
+              "slug": "chart-of-accounts.account.other.account.index"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "Finance",
+      "name": "Finance",
+      "icon": "menu-icon icon-base ti tabler-smart-home",
+      "slug": "finance",
+      "submenu": [
+        {
+          "url": "finance/paymentvoucher",
+          "name": "Payment Voucher",
+          "slug": "finance.paymentvoucher.index"
+        },
+        {
+          "url": "finance/receivevoucher",
+          "name": "Receive Voucher",
+          "slug": "finance.receivevoucher.index"
+        },
+        {
+          "url": "finance/journalvoucher",
+          "name": "Journal Voucher",
+          "slug": "finance.journalvoucher.index"
+        },
+        {
+          "url": "finance/post-dated-cheque",
+          "name": "Post Dated Cheque",
+          "slug": "finance.post.dated.cheque.index"
+        }
+      ]
+    },
+    {
+      "url": "purchase",
+      "name": "Purchase",
+      "icon": "menu-icon icon-base ti tabler-smart-home",
+      "slug": "purchase",
+      "submenu": [
+        {
+          "url": "/purchase",
+          "name": "List",
+          "slug": "purchase.index"
+        },
+        {
+          "url": "/purchase/return",
+          "name": "Return Purchase",
+          "slug": "purchase.return"
+        }
+      ]
+    },
+    {
+      "url": "stock",
+      "name": "Stock",
+      "icon": "menu-icon icon-base ti tabler-smart-home",
+      "slug": "stock",
+      "submenu": [
+        {
+          "url": "/stock/inventory",
+          "name": "Inventory",
+          "slug": "stock.inventory.index"
+        },
+        {
+          "url": "/stock/damage",
+          "name": "Damage",
+          "slug": "stock.damage.index"
+        }
+      ]
+    },
+    {
+      "url": "sell",
+      "name": "Sell",
+      "icon": "menu-icon icon-base ti tabler-smart-home",
+      "slug": "sell",
+      "submenu": [
+        {
+          "url": "/sell/add",
+          "name": "List",
+          "slug": "sell.index"
+        },
+        {
+          "url": "/sell/return",
+          "name": "Return sell",
+          "slug": "sell.return.index"
+        }
+      ]
+    },
+    {
+      "url": "setup",
+      "name": "Setup",
+      "icon": "menu-icon icon-base ti tabler-smart-home",
+      "slug": "setup",
+      "submenu": [
+        {
+          "url": "/setup/unit",
+          "name": "Units",
+          "slug": "setup.unit.index"
+        },
+        {
+          "url": "/setup/city",
+          "name": "City",
+          "slug": "setup.city.index"
+        },
+        {
+          "url": "/setup/size",
+          "name": "Size",
+          "slug": "setup.size.index"
+        },
+        {
+          "url": "/setup/garage",
+          "name": "Garage",
+          "slug": "setup.garage.index"
+        },
+        {
+          "url": "/profit-and-loss",
+          "name": "Users",
+          "slug": "profit-and-loss"
+        }
+      ]
+    }
+  ]
+}
