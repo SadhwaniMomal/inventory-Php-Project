@@ -10,7 +10,7 @@ class Stockinventory extends Model
 
   protected $fillable = [
     'account_code',
-    'product_id',
+    'coa_id',
     'product_name',
     'size_id',
     'garage_id',
@@ -19,10 +19,10 @@ class Stockinventory extends Model
     'opening_date',
   ];
 
-  // ── Product - chart_of_accounts table se ──
+  // ── Product (chart_of_accounts) ──
   public function product()
   {
-    return $this->belongsTo(ChartOfAccount::class, 'product_id');
+    return $this->belongsTo(ChartOfAccount::class, 'coa_id');
   }
 
   // ── Size ──

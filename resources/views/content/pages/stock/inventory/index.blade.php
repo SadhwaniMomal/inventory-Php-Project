@@ -13,37 +13,33 @@
     </div>
   @endif
 
-  {{-- ═══════════════════════════════ --}}
-  {{--         ADD INVENTORY FORM      --}}
-  {{-- ═══════════════════════════════ --}}
+  {{-- ADD INVENTORY FORM --}}
   <div class="card mb-4">
     <div class="card-header">
       <h5 class="mb-0">Add Inventory</h5>
     </div>
-
     <div class="card-body">
       <form method="POST" action="{{ route('stock.inventory.store') }}">
         @csrf
-
         <div class="row g-3">
 
-          {{-- Product Dropdown - chart_of_accounts se RAW aur FINISH --}}
+          {{-- Product Dropdown --}}
           <div class="col-md-4">
             <label>Product <span class="text-danger">*</span></label>
-            <select name="product_id" class="form-select @error('product_id') is-invalid @enderror">
+            <select name="coa_id" class="form-select @error('coa_id') is-invalid @enderror">
               <option value="">Select Product</option>
               @foreach ($products as $product)
-                <option value="{{ $product->id }}" {{ old('product_id') == $product->id ? 'selected' : '' }}>
+                <option value="{{ $product->id }}" {{ old('coa_id') == $product->id ? 'selected' : '' }}>
                   {{ $product->account_name }}
                 </option>
               @endforeach
             </select>
-            @error('product_id')
+            @error('coa_id')
               <div class="invalid-feedback">{{ $message }}</div>
             @enderror
           </div>
 
-          {{-- Product Name - Manual Enter --}}
+          {{-- Product Name --}}
           <div class="col-md-4">
             <label>Product Name <span class="text-danger">*</span></label>
             <input type="text" name="product_name" class="form-control @error('product_name') is-invalid @enderror"
@@ -116,14 +112,11 @@
     </div>
   </div>
 
-  {{-- ═══════════════════════════════ --}}
-  {{--           INVENTORY TABLE       --}}
-  {{-- ═══════════════════════════════ --}}
+  {{-- INVENTORY TABLE --}}
   <div class="card">
     <div class="card-header">
       <h5 class="mb-0">Inventory List</h5>
     </div>
-
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-striped">

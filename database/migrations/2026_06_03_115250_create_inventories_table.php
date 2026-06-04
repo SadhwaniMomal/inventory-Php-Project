@@ -14,7 +14,7 @@ return new class extends Migration
     Schema::create('inventories', function (Blueprint $table) {
       $table->id();
       $table->string('account_code');
-      $table->foreignId('product_id')->constrained('chart_of_accounts');
+      $table->foreignId('coa_id')->constrained('chart_of_accounts');
       $table->string('product_name')->nullable();
       $table->foreignId('size_id')->constrained('sizes');
       $table->foreignId('garage_id')->constrained('garages');
